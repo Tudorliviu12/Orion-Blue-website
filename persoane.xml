@@ -1,0 +1,60 @@
+<?xml version "1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume> Arama </nume>
+        <prenume> Luigi </prenume>
+        <varsta> 23 </varsta>
+        <telefon> 0742119031 </telefon>
+        <adresa>
+            <strada> Aleea Ghioceilor </strada>
+            <nr> 20 </nr>
+            <oras> Dorohoi </oras>
+        </adresa>
+        <studii>
+            <institutie> Liceul Regina Maria </institutie>
+            <adresa>
+                <strada> Bulevardul Victoriei </strada>
+                <nr> 45 </nr>
+                <oras> Dorohoi </oras>
+            </adresa>
+        </studii>
+    </persoana>
+    <persoana id="2">
+        <nume> Tabusca </nume>
+        <prenume> Codrina </prenume>
+        <varsta> 22 </varsta>
+        <telefon> 0740901388 </telefon>
+        <adresa>
+            <strada> Strada Lalelelor </strada>
+            <nr> 2 </nr>
+            <oras> Bacau </oras>
+        </adresa>
+        <studii>
+            <institutie> Liceul Vasile Alecsandri </institutie>
+            <adresa>
+                <strada> Strada Mihai Eminescu </strada>
+                <nr> 3 </nr>
+                <oras> Bacau </oras>
+            </adresa>
+        </studii>
+    </persoana>
+    <persoana id="3">
+        <nume> Parasca </nume>
+        <prenume> Raul </prenume>
+        <varsta> 35 </varsta>
+        <telefon> 0741928910 </telefon>
+        <adresa>
+            <strada> Strada Ion Creanga</strada>
+            <nr> 20 </nr>
+            <oras> Dorohoi </oras>
+        </adresa>
+        <studii>
+            <institutie> Facultatea de Automatica si Calculatoare </institutie>
+            <adresa>
+                <strada> Bulevardul Profesor Dimitrie Mangeron </strada>
+                <nr> 27 </nr>
+                <oras> Iasi </oras>
+            </adresa>
+        </studii>
+    </persoana>
+</persoane>
