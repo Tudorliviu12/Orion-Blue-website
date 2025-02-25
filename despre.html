@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title> Wizz Air</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanpN77z96dV2t97FBWg9MdqYwc0DRY9HQhg&s">
     </head>
     <body>
         <h1>
-            WIZZ AIR
+            <font color="BB2649"> WIZZ AIR </font> <img src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png" width="50" height="50">
         </h1>
         <h3>
             Călătorește alături de Wizz Air!
         </h3>
         <p>
-            <strong> Wizz Air </strong> este o <i> companie aeriană </i> low-cost din Europa, oferind zboruri accesibile către sute de destinații.
+            <strong> Wizz Air </strong> este o <i> companie aeriană low-cost</i> din Europa, oferind zboruri accesibile către sute de destinații.
         </p>
         <p>
            Site-ul oficial al companiei Wizz Air, de unde se pot achiziționa bilete de avion, se gaseste <a href="https://www.wizzair.com/ro-ro">aici</a>
@@ -43,7 +44,20 @@
                 <td> 20 </td>
             </tr>
         </table>
+        <br>
+        
+        <p> <strong> Pagina de wikipedia Wizz Air, pentru mai multe informații:</strong></p>
+        <iframe src="https://en.wikipedia.org/wiki/Wizz_Air" width="100%" height="450"> </iframe>
 
+        <p> <strong> Topul celor mai populare zboruri operate de Wizz Air: </strong> </p>
+        <ol>
+            <li> București-Londra</li>
+            <li> București-Milano</li>
+            <li> București-Barcelona</li>
+            <li> București-Madrid</li>
+            <li> Cluj-Napoca-Londra</li>
+        </ol>
+        
         <form>
             <h3>Înscrie-te în fan-clubul Wizz Air, pentru a primi toate ofertele!</h3>
             
@@ -63,18 +77,32 @@
                 <option value="CND">Aeroportul Internațional Constanța Mihail Kogălniceanu</option>
                 <option value="CRA">Aeroportul Internațional Craiova</option>
                 <option value="SBZ">Aeroportul Internațional Sibiu</option>
-                <option value="MRS">Aeroportul Internațional Mureș</option>
-                <option value="KLU">Aeroportul Internațional Klausenburg</option>
+                <option value="MRS">Aeroportul Internațional Satu Mare</option>
+                <option value="KLU">Aeroportul Internațional Brașov</option>
                 <option value="ORR">Aeroportul Internațional Oradea</option>
                 <option value="SUJ">Aeroportul Internațional Suceava</option>
-                <option value="BAY">Aeroportul Internațional Bacău</option>
-                <option value="TCE">Aeroportul Internațional Târgu Mureș</option>
-                <option value="SNY">Aeroportul Internațional Sânpetru</option>
+                <option value="BAY">Aeroportul Internațional "George Enescu" Bacău</option>
+                <option value="TCE">Aeroportul Internațional "Transilvania" Târgu Mureș</option>
+                <option value="SNY">Altul/Nu răspund</option>
             </select><br>
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email"><br>
             <label for="phone">Telefon:</label>
             <input type="text" id="phone" name="phone"><br>
+
+            <label for="pass"> Parola:</label>
+            <input type="password" id="pass" name="pass">
+
+            <p> Dorești să primești cele mai noi oferte Wizz Air direct prin e-mail?</p>
+            <input type="radio" name="news" value="yes" checked> Da, vreau <br>
+            <input type="radio" name="news" value="no"> Nu, mulțumesc 
+            
+            <p> Ești de acord cu termenii și condițiile fan-clubului Wizz Air?</p>
+            <input type="radio" name="terms" value="yes" > Da <br>
+            <input type="radio" name="terms" value="no"> Nu <br>
+
+            <input type="submit" value="Înregistrează-te">
         </form>
+
     </body>
 </html>
