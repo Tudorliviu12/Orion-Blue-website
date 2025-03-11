@@ -1,0 +1,190 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom left, #327f9b, #97b4be);
+    margin: 25px;
+  }
+
+nav{
+   display: flex;
+   justify-content: right;
+   padding: 2px;
+   position: static;
+}
+
+nav a{
+    color: rgb(0, 22, 117);
+    margin: 3px;
+    position: relative;
+
+}
+
+nav :hover{
+  color: #a34187;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+nav a[href="index.html"]::after {
+  background-image: url("../imagini/acasa.png");
+}
+
+nav a[href="despre.html"]::after {
+  background-image: url("../imagini/despre.png");
+}
+
+nav a[href="video.html"]::after {
+  background-image: url("../imagini/video.png");
+}
+
+nav a[href="inregistreaza.html"]::after {
+  background-image: url("../imagini/inreg.png");
+}
+
+nav a[href="desen.html"]::after {
+  background-image: url("../imagini/desen.png");
+}
+
+nav a:hover::after {
+  opacity: 1;
+}
+
+.page-title{
+    color: #000080;
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.explore{
+  color: #00008B;
+
+}
+
+table, th, td{
+  border: 3px solid;
+  border-color: #06050b;
+  border-style: double;
+  border-radius: 5%;
+}
+tr:hover{
+  background-color: #8393b2;
+}
+td:hover{
+  background-color: #546ea3;
+}
+
+th{
+  color: rgb(14, 55, 203);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.orion-logo{
+  float: right;
+}
+
+input{
+  background-color: #c0d3da;
+  padding: 5px;
+  box-sizing: border-box;
+}
+textarea{
+  background-color: #c0d3da;
+  display: block;
+}
+select{
+  background-color: #c0d3da;
+}
+input:focus, textarea:focus{
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="color"]{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  display: block;
+  background: linear-gradient(to right, #c54747, #5be76b);
+  height: 15px;
+  width: 250px;
+  border-radius: 20px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: url('../imagini/smallplane.png');
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+}
+
+.register-button{
+  background-color: rgb(111, 217, 111);
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  border-radius: 12px;
+  box-shadow: 0 9px #c0bfbf;
+  position: relative;
+  margin-top:20px;
+  margin-bottom: 20px;
+  animation-name: button-run;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button-run{
+  0% {
+    left: 20px;
+  }
+  }
+
+.register-button:hover{
+  background-color: rgb(61, 129, 61);
+}
+
+
+.plane{
+  position: absolute;
+  animation-name: plane-fly;
+  left: 0px;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  left: 0px;
+}
+
+@keyframes plane-fly{
+  0% {
+    left: -70px;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.plane-image{
+  float: right;
+}

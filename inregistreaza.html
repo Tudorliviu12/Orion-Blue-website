@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/stil.css">
         <title> Orion Blue: Inregistreaza-te </title>
         <link rel="icon" href="imagini/logo.jpg">
     </head>
-    <body style="background-color:#92b6c3">
+    <body>
         
-        <div align="right">
+        <nav>
             <a href="index.html">Acasă</a> |
             <a href="despre.html">Despre noi</a> |
             <a href="video.html">Video</a> |
             <a href="inregistreaza.html">Înregistrează-te!</a> |
             <a href="desen.html">Desen</a>
-        </div>
+        </nav>
         <header>
-            <img src="imagini/logo.png" alt="logo" width="140" height="100%" align="right">
+            <img src="imagini/logo.png" alt="logo" width="140" height="100%" class="orion-logo">
             <h1> <img src="imagini/name.png" alt="Orion Blue" height="80"> </h1>
             <h2> Înregistrează-te acum și decolează spre beneficii exclusive!</h2>
             <h3> Reduceri și oferte speciale doar pentru membri! </h3>
@@ -105,7 +106,7 @@
             <label for="buget">Cât de des comanzi mâncare în timpul zborului? </label>
             <input type="range" id="buget" name="buget" min="0" max="10"><br>
 
-            <label for="description">Alte lucruri interesante despre tine pe care dorești să le împărtășești cu noi: </label>
+            <label for="description">Suferi de anumite alergii? Descrie aici: </label>
             <textarea id="description" name="description" rows="6" cols="50"> </textarea>
 
         </fieldset>
@@ -118,7 +119,7 @@
             <p> Ești de acord cu termenii și condițiile impuse de către compania Orion Blue?</p>
             <input type="checkbox" name="terms" value="yes" > Sunt de acord cu termenii și condițiile impuse <br>
             <br>
-            <input type="submit" value="Înregistrează-te">
+            <input type="submit" class="register-button" value="Înregistrează-te">
         </fieldset>
         </form>
 

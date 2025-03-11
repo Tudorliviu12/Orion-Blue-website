@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/stil.css">
         <title> Orion Blue: Despre noi</title>
         <link rel="icon" href="imagini/logo.jpg">
     </head>
-    <body style="background-color:#92b6c3">
-        <div align="right">
+    <body>
+        <nav>
             <a href="index.html">Acasă</a> |
             <a href="despre.html">Despre noi</a> |
             <a href="video.html">Video</a> |
             <a href="inregistreaza.html">Înregistrează-te!</a> |
             <a href="desen.html">Desen</a>
-        </div>
-        <h1>
-            <font color="#000080"> ORION BLUE </font> <img src="imagini/smallplane.png" alt="plane" width="50" height="50">
+        </nav>
+        <h1 class="page-title">
+            ORION BLUE <img src="imagini/smallplane.png" class="plane" alt="plane" width="50" height="50">
         </h1>
+        <div><img src="imagini/logo.png" alt="logo" width="100" height="100" class="orion-logo"></div>
         <h2>
-            Cu Orion Blue, cerul este doar începutul.  <img src="imagini/logo.png" alt="logo" width="100" height="100" align="right">
+            Cu Orion Blue, cerul este doar începutul.  
         </h2>
         <p>
             <strong> Orion Blue </strong> este o <i> companie aeriană de top </i> , oferind zboruri accesibile și confortabile către destinații din întreaga lume. Cu o flotă modernă și servicii de calitate, Orion Blue conectează pasagerii la cele mai dorite colțuri ale globului, aducându-i mai aproape de aventuri și experiențe de neuitat.
@@ -29,7 +31,7 @@
         <p>
             <strong> Aeroporturile </strong>cele mai mari din România în care activează compania Orion Blue sunt:
         </p>
-        <table border="2"> 
+        <table class="tabel-despre"> 
             <tr>
                 <th> Aeroport </th>
                 <th> Oraș </th>
@@ -71,7 +73,7 @@
             <li> Cluj-Napoca - Paris</li>
         </ol>
         <hr>
-        <img src="imagini/plane1.jpg" alt="Avion" width="50%", height="50%", align="right">
+        <img src="imagini/plane1.jpg" class="plane-image" alt="Avion" width="450px", height="260px">
         
         <form>
             <h3>Înscrie-te în fan-clubul Orion Blue, pentru a primi toate ofertele!</h3>
@@ -98,7 +100,7 @@
                 <option value="SUJ">Aeroportul Internațional Suceava</option>
                 <option value="BAY">Aeroportul Internațional "George Enescu" Bacău</option>
                 <option value="TCE">Aeroportul Internațional "Transilvania" Târgu Mureș</option>
-                <option value="SNY">Altul/Nu răspund</option>
+                <option value="Altul">Altul/Nu răspund</option>
             </select><br>
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email"><br>
