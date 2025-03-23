@@ -6,16 +6,23 @@
         <link rel="icon" href="imagini/logo.jpg">
     </head>
     <body>
-        <nav>
-            <a href="index.html">Acasă</a> |
-            <a href="despre.html">Despre noi</a> |
-            <a href="video.html">Video</a> |
-            <a href="inregistreaza.html">Înregistrează-te!</a> |
-            <a href="desen.html">Desen</a>
+        <button class="menu-button" onclick="toggleMenu()">Meniu ☰</button>
+        <nav class="sidebar">
+            <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="inregistreaza.html">Înregistrează-te!</a></li>
+            <li><a href="desen.html">Desen</a></li>
+            <li><a href="invat.html">Învăț</a></li>
+        </ul>
+            <img src="imagini/girl_sidebar.png" class="sidebar_image" alt="imagine" height="300">
         </nav>
         <h1 class="page-title">
-            ORION BLUE <img src="imagini/smallplane.png" class="plane" alt="plane" width="50" height="50">
+            ORION BLUE
         </h1>
+        <br>
+        <img src="imagini/smallplane.png" class="plane" alt="plane" width="50" height="50">
         <div><img src="imagini/logo.png" alt="logo" width="100" height="100" class="orion-logo"></div>
         <h2>
             Cu Orion Blue, cerul este doar începutul.  
@@ -31,7 +38,7 @@
         <p>
             <strong> Aeroporturile </strong>cele mai mari din România în care activează compania Orion Blue sunt:
         </p>
-        <table class="tabel-despre"> 
+        <table class="tabel_despre"> 
             <tr>
                 <th> Aeroport </th>
                 <th> Oraș </th>
@@ -58,6 +65,18 @@
                 <td> 56 </td>
             </tr>
         </table>
+        <br>
+        <p><strong> Destinații favorite:</strong></p>
+        <div class="container">
+            <div class="card"> <img src="imagini/barcelona.png" alt="Barcelona"> </div>
+            <div class="card"> <img src="imagini/milan.png" alt="Milan"> </div>
+            <div class="card"> <img src="imagini/budapest.png" alt="Budapest"> </div>
+            <div class="card"> <img src="imagini/istanbul.png" alt="Istanbul"> </div>
+            <div class="card"> <img src="imagini/amsterdam.png" alt="Amsterdam"> </div>
+            <div class="card"> <img src="imagini/london.png" alt="London"> </div>
+
+        </div>
+
         <br>
         <hr>
         <p> <strong>Informații meteo globale </strong></p>
@@ -123,5 +142,7 @@
         <footer>
             <p>&copy;2025. Orion Blue</p>
         </footer>
+        <script src="js/script.js"></script>
+
     </body>
 </html>
