@@ -1,32 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Port+Lligat+Sans&family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom left, #327f9b, #97b4be);
+    background-image: url(../imagini/background.jpg);
+    background-position: center;
+    /*background: linear-gradient(to bottom left, #327f9b, #97b4be); */
+    background-size: auto;
     margin: 25px;
   }
 
-nav{
-   display: flex;
-   justify-content: right;
-   padding: 2px;
-   position: static;
+.body_home{
+  margin-top: 70px;
+  background-image: url(../imagini/home_background.jpg);
+  background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom left, #327f9b, #97b4be);
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 9980;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+
+.sidebar ul li a {
+  font-family: 'Magra';
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-button {
+  font-size: 24px;
+  font-family: 'Ruslan Display';
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 9990;
 }
 
 nav a{
-    color: rgb(0, 22, 117);
+    color: rgb(0, 0, 0);
     margin: 3px;
     position: relative;
-
 }
 
-nav :hover{
+nav a:hover{
   color: #a34187;
+  transform: scale(1.05);
 }
 
 nav a::after{
     content: "";
     position: absolute;
-    left: 50%;
-    top: 100%;
+    left: -15%;
     width: 30px;
     height: 30px;
     transform: translateX(-50%);
@@ -56,22 +115,177 @@ nav a[href="desen.html"]::after {
   background-image: url("../imagini/desen.png");
 }
 
+nav a[href="invat.html"]::after {
+  background-image: url("../imagini/invat.png");
+}
+
 nav a:hover::after {
   opacity: 1;
+}
+
+.text-container h2{
+  font-family: 'Tektur', serif;
+}
+
+.text-container h3{
+  font-family: 'Marcellus', serif;
+}
+
+
+.meniu_invat{
+  position: absolute;
+  right: 100px;
+  top: 90px;
+  width: 260px;
+  height: 180px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  animation: meniuCerc 8s infinite linear;
+  
+}
+
+@keyframes meniuCerc {
+  0% {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
+}
+
+.nor{
+  width: 100%;
+  height: auto;
+  position: static;
+  justify-content: right;
+  
+}
+
+.meniu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+.meniu ul{
+  margin-left:-40px;
+}
+
+.meniu p{
+  font-size: 18px;
+}
+
+#sectiunea1 h1{
+  font-family: 'Bungee Shade', serif;
+  font-size: 30px;
+}
+
+#sectiunea1 p{
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#sectiunea1 button{
+  font-size:20px;
+  font-family: 'Quicksand', Courier, monospace;
+  background-color: rgb(127, 215, 250);
+  border-radius: 8px;
+  transition-duration: 1s;
+}
+
+#sectiunea1 button:hover{
+  background-color: rgb(0, 104, 146);;
+}
+
+#sectiunea2 h1{
+  font-family: 'Bungee Shade', serif;
+  font-size: 30px;
+}
+
+#sectiunea2 p{
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#sectiunea2 #undo{
+  font-size: 16px;
+  font-family: 'Quicksand', Courier, monospace;
+  position: relative;
+  background-color: #96bdea;
+}
+
+#canvas{
+  border: 30px ridge rgb(6, 6, 75);
+  background-color: rgb(211, 214, 255);
+  cursor: crosshair;
+}
+
+#sectiunea3 h1{
+  font-family: 'Bungee Shade', serif;
+  font-size: 30px;
+}
+
+#tabel_sect3{
+  background-color: #d4ecff;
+  border: 3px solid;
+  border-color: #06050b;
+  border-style: groove;
+  border-radius: 5%;
+  font-size: 16px;
+  font-family: 'Port Lligat Sans';
+  width: 670px;
+}
+
+#tabel_sect3 td{
+  background-color: #d4ecff;
+  border: 3px solid;
+  border-color: #06050b;
+  border-style: groove;
+  border-radius: 5%;
+  font-size: 16px;
+  font-family: 'Port Lligat Sans';
+  height: 40px;
+  text-align: center;
+}
+
+#coloana, #linie{
+  width: 50px;
+  height: 30px;
+  background-color: #b8c0da;
 }
 
 .page-title{
     color: #000080;
     font-size: 36px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    animation: bounce 4s infinite;
+    
   }
+
+@keyframes bounce{
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
 
 .explore{
   color: #00008B;
 
 }
 
-table, th, td{
+.tabel_despre{
   border: 3px solid;
   border-color: #06050b;
   border-style: double;
@@ -84,9 +298,20 @@ td:hover{
   background-color: #546ea3;
 }
 
-th{
+.tabel_despre th{
+  border: 3px solid;
+  border-color: #06050b;
+  border-style: double;
+  border-radius: 5%;
   color: rgb(14, 55, 203);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.tabel_despre td{
+  border: 3px solid;
+  border-color: #06050b;
+  border-style: double;
+  border-radius: 5%;
 }
 
 .orion-logo{
@@ -156,14 +381,59 @@ input[type="range"]::-webkit-slider-thumb{
   0% {
     left: 20px;
   }
+  100%{
+    right: 0px;
   }
+}
 
 .register-button:hover{
   background-color: rgb(61, 129, 61);
 }
 
-.video-gallery{
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-gallery iframe {
+    flex: 1 1 30%;
+    max-width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.video-gallery p {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card{
+  width: 160px;
+  height: 200px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.container:hover > :not(:hover){
+  opacity: 0.3;
+}
+
+.container{
   display: flex;
+  gap: 10px;
+}
+
+.card:hover{
+  transform: scale(1.1);
 }
 
 
@@ -192,3 +462,87 @@ input[type="range"]::-webkit-slider-thumb{
 .plane-image{
   float: right;
 }
+
+
+#uk_flag:hover{
+  background-image: url(../imagini/uk_flag.png);
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+#hungary_flag:hover{
+  background-image: url(../imagini/hungary_flag.png);
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+#italy_flag:hover{
+  background-image: url(../imagini/italy_flag.png);
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+#usa_flag:hover{
+  background-image: url(../imagini/usa_flag.png);
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+}
+
+#spain_flag:hover{
+  background-image: url(../imagini/spain_flag.png);
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: overlay;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  body{
+    background: linear-gradient(to bottom left, #327f9b, #97b4be);
+  }
+  .video-gallery iframe {
+    flex: 1 1 100%;
+    height: 250px;
+ }
+ }
+
+ @media (max-width: 800px){
+  .meniu_invat{
+    right: 25px;
+  }
+  #sectiunea1 p{
+    margin-top: 10px;
+  }
+
+  .text-container {
+    background: rgba(36, 137, 224, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    /*color: white; */
+}
+ }
