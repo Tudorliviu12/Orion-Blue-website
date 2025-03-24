@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stil.css">
+        <title> Orion Blue: Desen </title>
+        <link rel="icon" href="imagini/logo.jpg">
+    </head>
+    <body>
+        <button class="menu-button" onclick="toggleMenu()">Meniu ☰</button>
+        <nav class="sidebar">
+            <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="inregistreaza.html">Înregistrează-te!</a></li>
+            <li><a href="desen.html">Desen</a></li>
+            <li><a href="invat.html">Învăț</a></li>
+        </ul>
+            <img src="imagini/guy2_sidebar.png" class="sidebar_image" alt="imagine" width="300">
+        </nav>
+        
+        <svg width="800" height="1600">
+            <polygon
+            points="50,5 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35"
+            fill="yellow">
+        </polygon>
+
+        <polygon
+            points="250,5 261,35 298,35 268,57 279,91 250,70 221,91 232,57 202,35 239,35"
+            fill="yellow">
+        </polygon>
+            <g>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+                        <stop offset="0%" stop-color="#4169E1" />
+                        <stop offset="100%" stop-color="#87CEFA" />
+                    </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="150" rx="150" ry="75" fill="url(#grad1)"/>
+                <text x="200" y="150" fill="black" font-size="30" text-anchor="middle"> Orion Blue </text>
+                <animateTransform
+                attributeName="transform"
+                          type="translate"
+                          begin="1s"
+                          from="0 0" 
+                          to="400 0"
+                          dur="5s"
+                          repeatCount="indefinite"/>
+            </g>
+            <g>
+                <rect width="75" height="300" x="150" y="700" rx="20" ry="20" fill="#4169E1"> </rect>
+                <rect width="255" height="40" x="60" y="780" rx="20" ry="20" fill="#4169E1"> </rect>
+                <rect width="215" height="40" x="80" y="970" rx="20" ry="20" fill="#4169E1"> </rect>
+                <text x="190" y="805" fill="black" font-size="18" text-anchor="middle"> Acesta ar trebui sa fie un avion </text>
+                <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="0,0; 0,-400; 400,-400; 400,0; 0,0"
+                dur="8s"
+                begin="1s"
+                keyTimes="0; 0.25; 0.5; 0.75; 1"
+                repeatCount="indefinite"/>
+
+                <animateTransform
+                attributeName="transform"
+                additive="sum"
+                type="rotate"
+                values="0 187.5 850; 90 187.5 850; 180 187.5 850; 270 187.5 850; 360 187.5 850"
+                dur="8s"
+                begin="1s"
+                keyTimes="0; 0.25; 0.5; 0.75; 1"
+                calcMode="discrete"
+                repeatCount="indefinite"/>
+            </g>
+
+
+        </svg>
+        
+        <footer>
+            <p>&copy;2025. Orion Blue</p>
+        </footer>
+        <script src="js/script.js"></script>
+
+    </body>
+ </html>

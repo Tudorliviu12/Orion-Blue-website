@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stil.css">
+        <title> Orion Blue: Invat </title>
+        <link rel="icon" href="imagini/logo.jpg">
+    </head>
+    <body onload="init()">
+        
+        <button class="menu-button" onclick="toggleMenu()">Meniu ☰</button>
+        <nav class="sidebar">
+            <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="inregistreaza.html">Înregistrează-te!</a></li>
+            <li><a href="desen.html">Desen</a></li>
+            <li><a href="invat.html">Învăț</a></li>
+        </ul>
+            <img src="imagini/girl2_sidebar.png" class="sidebar_image" alt="imagine" height="350">
+        </nav>
+        <div class="meniu_invat">
+        <img src="imagini/cloud.png" alt="Nor" class="nor">
+        <aside class="meniu">
+            <p> Meniu:</p>
+            <ul>
+                <li><a href="#sectiunea1"> Sectiunea 1</a></li>
+                <li><a href="#sectiunea2"> Sectiunea 2</a></li>
+                <li><a href="#sectiunea3"> Sectiunea 3</a></li>
+            </ul>
+        </aside>
+        </div>
+        
+        <section id="sectiunea1">
+            <h1>Datele tale în zbor!</h1>
+
+            <p> <button id="invatButton" onclick="click_invat()"> Dă click dacă ești gata să zbori cu noi! ✈️</button></p>
+            <p id="url"></p>
+            <p id="data"></p>
+            <p id="timp"></p>
+            <p id="locatie"></p>
+            <p id="browser"></p>
+            
+        </section>
+        <section id="sectiunea2">
+            <h1>Creează Constelații Geometrice!</h1>
+            <canvas id="canvas" width="650" height="350"></canvas>
+            <br>
+            <label for="favcolor">Alege culoarea traseului zborului: ✈️</label>
+            <input type="color" id="borderColor" value="#009DFF">
+            <br>
+            <label for="favcolor">Alege culoarea destinației visate: 🌅</label>
+            <input type="color" id="fillColor" value="#009DFF">
+            <br>
+            <button id="undo" onclick="click_undo()">Ai greșit? Nicio problemă!</button>
+        </section>
+        <section id="sectiunea3">
+            <h1>Destinații de vis:</h1>
+                <table id="tabel_sect3">
+                    <tr>
+                        <td> Oraș: </td>
+                        <td> Țară:</td>
+                        <td> Obiective turistice: </td>
+                    </tr>
+                    <tr>
+                        <td> Londra </td>
+                        <td id="uk_flag"> Regatul Unit al Marii Britanii și Irlandei de Nord</td>
+                        <td> Big Ben <br> London Eye <br> Tower Bridge <br> British Museum </td>
+                    </tr>
+                    <tr>
+                        <td> Budapesta </td>
+                        <td id="hungary_flag"> Ungaria </td>
+                        <td> Palatul Parlamentului <br> Bastionul Pescarilor <br> Biserica Matthias <br> Podul cu Lanțuri </td>
+                    </tr>
+                    <tr>
+                        <td> Milano </td>
+                        <td id="italy_flag"> Italia </td>
+                        <td> Domul din Milano <br> Galleria Vittorio Emanuele II <br> Lacul Como <br> Pinacoteca di Brera</td>
+                    </tr>
+                    <tr>
+                        <td> Barcelona</td>
+                        <td id="spain_flag"> Spania</td>
+                        <td> Sagrada Familia <br> Muzeul Picasso <br> Parcul Güell <br> Stadionul Camp Nou</td>
+                    </tr>
+                    <tr>
+                        <td> New York </td>
+                        <td id="usa_flag"> Statele Unite ale Americii </td>
+                        <td> Central Park <br> Times Square <br> Statuia Libertății <br> Empire State Building</td>
+                    </tr>
+                </table>
+            <br>
+            <label for="linie">Alege linia la care vrei să introduci:</label>
+            <input type="number" id="linie" name="linie" min="1"><br>
+
+            <label for="coloana">Alege coloana la care vrei să introduci:</label>
+            <input type="number" id="coloana" name="coloana" min="1"><br>
+
+            <label for="favcolor">Alege culoarea orașului de vis: ✈️</label>
+            <input type="color" id="fillColor3" value="#009DFF">
+            <br>
+
+            <button onclick="adaugaLinie()" class="buton">Adaugă Linie</button>
+            <button onclick="adaugaColoana()" class="buton">Adaugă Coloană</button>
+        </section>
+
+        <footer>
+            <p>&copy;2025. Orion Blue</p>
+        </footer>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stil.css">
+        <title> Orion Blue: Despre noi</title>
+        <link rel="icon" href="imagini/logo.jpg">
+    </head>
+    <body>
+        <button class="menu-button" onclick="toggleMenu()">Meniu ☰</button>
+        <nav class="sidebar">
+            <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="inregistreaza.html">Înregistrează-te!</a></li>
+            <li><a href="desen.html">Desen</a></li>
+            <li><a href="invat.html">Învăț</a></li>
+        </ul>
+            <img src="imagini/girl_sidebar.png" class="sidebar_image" alt="imagine" height="300">
+        </nav>
+        <h1 class="page-title">
+            ORION BLUE
+        </h1>
+        <br>
+        <img src="imagini/smallplane.png" class="plane" alt="plane" width="50" height="50">
+        <div><img src="imagini/logo.png" alt="logo" width="100" height="100" class="orion-logo"></div>
+        <h2>
+            Cu Orion Blue, cerul este doar începutul.  
+        </h2>
+        <p>
+            <strong> Orion Blue </strong> este o <i> companie aeriană de top </i> , oferind zboruri accesibile și confortabile către destinații din întreaga lume. Cu o flotă modernă și servicii de calitate, Orion Blue conectează pasagerii la cele mai dorite colțuri ale globului, aducându-i mai aproape de aventuri și experiențe de neuitat.
+        </p>
+        <p>
+           Momentan, bilete de avion atât pentru zborurile interne cât și pentru cele internaționale operate de compania Orion Blue pot fi achiziționate de pe platformele <a href="https://www.vola.ro/">Vola</a> sau <a href="https://www.skyscanner.net/">Skyscanner</a>.
+        </p>
+        <img src="imagini/orionblue.jpg", alt="Avion operat de Orion Blue", width="500", height="250">
+
+        <p>
+            <strong> Aeroporturile </strong>cele mai mari din România în care activează compania Orion Blue sunt:
+        </p>
+        <table class="tabel_despre"> 
+            <tr>
+                <th> Aeroport </th>
+                <th> Oraș </th>
+                <th> Număr de destinații </th>
+            </tr>
+            <tr>
+                <td> Henri Coandă International Airport</td>
+                <td> București </td>
+                <td> 120 </td>
+            </tr>
+            <tr>
+                <td> Iași International Airport </td>
+                <td> Iași </td>
+                <td> 85 </td>
+            </tr>
+            <tr>
+                <td> Cluj Avram Iancu International Airport </td>
+                <td> Cluj-Napoca </td>
+                <td> 71 </td>
+            </tr>
+            <tr>
+                <td> Traian Vuia International Airport </td>
+                <td> Timișoara </td>
+                <td> 56 </td>
+            </tr>
+        </table>
+        <br>
+        <p><strong> Destinații favorite:</strong></p>
+        <div class="container">
+            <div class="card"> <img src="imagini/barcelona.png" alt="Barcelona"> </div>
+            <div class="card"> <img src="imagini/milan.png" alt="Milan"> </div>
+            <div class="card"> <img src="imagini/budapest.png" alt="Budapest"> </div>
+            <div class="card"> <img src="imagini/istanbul.png" alt="Istanbul"> </div>
+            <div class="card"> <img src="imagini/amsterdam.png" alt="Amsterdam"> </div>
+            <div class="card"> <img src="imagini/london.png" alt="London"> </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <p> <strong>Informații meteo globale </strong></p>
+        <p> Accesează prognoza meteo actualizată pentru cele mai importante orașe din lume, pentru a-ți planifica călătoriile cu Orion Blue. Fie că te pregătești pentru un zbor spre destinații exotice sau pentru o escapadă urbană, află cum va fi vremea la destinația ta din orice colț al lumii. Detalii complete și precise despre temperatură, precipitații și condițiile meteo. </strong></p>
+        <iframe src="https://www.accuweather.com/en/world-weather" width="100%" height="450"> </iframe>
+
+        <p> <strong> Topul celor mai populare zboruri operate de Orion Blue, cu plecare de pe teritoriul României: </strong> </p>
+        <ol>
+            <li> București - Bergamo</li>
+            <li> București - Londra</li>
+            <li> București - Barcelona</li>
+            <li> Iași - Barcelona</li>
+            <li> Cluj-Napoca - Paris</li>
+        </ol>
+        <hr>
+        <img src="imagini/plane1.jpg" class="plane-image" alt="Avion" width="450px", height="260px">
+        
+        <form>
+            <h3>Înscrie-te în fan-clubul Orion Blue, pentru a primi toate ofertele!</h3>
+            
+            <label for="firstname">Prenume:</label>
+            <input type="text" id="firstname" name="firstname"><br>
+
+            <label for="lastname">Nume:</label>
+            <input type="text" id="lastname" name="lastname"><br>
+
+            <label for="airport"> Aeroportul preferat/cel mai apropiat:</label>
+            <select id="airport">
+                <option value="OTP">Aeroportul Internațional Henri Coandă București</option>
+                <option value="CLJ">Aeroportul Internațional Avram Iancu Cluj-Napoca</option>
+                <option value="IAS">Aeroportul Internațional Iași</option>
+                <option value="TSR">Aeroportul Internațional Timișoara Traian Vuia</option>
+                <option value="BBU">Aeroportul Internațional București Băneasa Aurel Vlaicu</option>
+                <option value="CND">Aeroportul Internațional Constanța Mihail Kogălniceanu</option>
+                <option value="CRA">Aeroportul Internațional Craiova</option>
+                <option value="SBZ">Aeroportul Internațional Sibiu</option>
+                <option value="MRS">Aeroportul Internațional Satu Mare</option>
+                <option value="KLU">Aeroportul Internațional Brașov</option>
+                <option value="ORR">Aeroportul Internațional Oradea</option>
+                <option value="SUJ">Aeroportul Internațional Suceava</option>
+                <option value="BAY">Aeroportul Internațional "George Enescu" Bacău</option>
+                <option value="TCE">Aeroportul Internațional "Transilvania" Târgu Mureș</option>
+                <option value="Altul">Altul/Nu răspund</option>
+            </select><br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Telefon:</label>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="pass"> Parola:</label>
+            <input type="password" id="pass" name="pass">
+
+            <p> Dorești să primești cele mai noi oferte Orion Blue direct prin e-mail?</p>
+            <input type="radio" name="news" value="yes" checked> Da, vreau <br>
+            <input type="radio" name="news" value="no"> Nu, mulțumesc 
+            
+            <p> Ești de acord cu termenii și condițiile fan-clubului Orion Blue?</p>
+            <input type="radio" name="terms" value="yes" > Da <br>
+            <input type="radio" name="terms" value="no"> Nu <br>
+
+            <input type="submit" value="Înregistrează-te">
+        </form>
+        <footer>
+            <p>&copy;2025. Orion Blue</p>
+        </footer>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

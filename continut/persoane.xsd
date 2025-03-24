@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="persoane">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="persoana" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                       <xs:element name="nume" type="xs:string"/>
+                       <xs:element name="prenume" type="xs:string"/>
+                       <xs:element name="varsta" type="xs:int"/>
+                       <xs:element name="telefon" type="xs:string"/>
+                       <xs:element name="adresa">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="strada" type="xs:string"/>
+                                    <xs:element name="nr" type="xs:int"/>
+                                    <xs:element name="oras" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                       </xs:element>
+                       <xs:element name="studii">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="institutie" type="xs:string"/>
+                                    <xs:element name="adresa">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="strada" type="xs:string"/>
+                                            <xs:element name="nr" type="xs:int"/>
+                                            <xs:element name="oras" type="xs:string"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                       </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:int" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
