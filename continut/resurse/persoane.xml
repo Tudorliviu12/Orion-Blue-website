@@ -1,0 +1,191 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<persoane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="persoane.xsd">
+    <persoana id="1">
+        <nume> Aramă </nume>
+        <prenume> Luigi </prenume>
+        <varsta> 23 </varsta>
+	<functie> Copilot </functie>
+        <telefon> 0742119031 </telefon>
+        <adresa>
+            <strada> Aleea Ghioceilor </strada>
+            <nr> 20 </nr>
+            <oras> Dorohoi </oras>
+        </adresa>
+        <studii>
+            <institutie> Facultatea de Automatică și Calculatoare </institutie>
+            <adresa>
+                <strada> Bulevardul Victoriei </strada>
+                <nr> 45 </nr>
+                <oras> Dorohoi </oras>
+            </adresa>
+        </studii>
+    </persoana>
+    <persoana id="2">
+        <nume> Zotic </nume>
+        <prenume> Andreea </prenume>
+        <varsta> 20 </varsta>
+        <telefon> 0771422982 </telefon>
+	<functie> Pilot stagiar </functie>
+        <adresa>
+            <strada> Strada Calea Plevnei </strada>
+            <nr> 19 </nr>
+            <oras> Dorohoi </oras>
+        </adresa>
+        <studii>
+            <institutie> Facultatea de Limbi Straine </institutie>
+            <adresa>
+                <strada> Bulevardul Carol I </strada>
+                <nr> 11 </nr>
+                <oras> Iasi </oras>
+            </adresa>
+        </studii>
+    </persoana>
+    <persoana id="3">
+        <nume> Tăbușcă </nume>
+        <prenume> Codrina </prenume>
+        <varsta> 22 </varsta>
+	<functie> Inginer software intern </functie>
+        <telefon> 0740901388 </telefon>
+        <adresa>
+            <strada> Strada Lalelelor </strada>
+            <nr> 2 </nr>
+            <oras> Bacău </oras>
+        </adresa>
+        <studii>
+            <institutie> Facultatea de Automatică și Calculatoare </institutie>
+            <adresa>
+                <strada> Strada Mihai Eminescu </strada>
+                <nr> 3 </nr>
+                <oras> Bacau </oras>
+            </adresa>
+        </studii>
+    </persoana>
+    <persoana id="4">
+        <nume> Parasca </nume>
+        <prenume> Raul </prenume>
+        <varsta> 35 </varsta>
+	<functie> Șef de cabină </functie>
+        <telefon> 0741928911 </telefon>
+        <adresa>
+            <strada> Strada Ion Creanga</strada>
+            <nr> 20 </nr>
+            <oras> Dorohoi </oras>
+        </adresa>
+        <studii>
+            <institutie> Facultatea de Automatică și Calculatoare </institutie>
+            <adresa>
+                <strada> Bulevardul Profesor Dimitrie Mangeron </strada>
+                <nr> 27 </nr>
+                <oras> Iasi </oras>
+            </adresa>
+        </studii>
+    </persoana>
+
+<persoana id="5">
+    <nume> Avram </nume>
+    <prenume> Lucian </prenume>
+    <varsta> 38 </varsta>
+    <functie> Copilot </functie>
+    <telefon> 0739887766 </telefon>
+    <adresa>
+        <strada> Strada Zborului </strada>
+        <nr> 42 </nr>
+        <oras> Sibiu </oras>
+    </adresa>
+    <studii>
+        <institutie> Academia de Aviație Civilă </institutie>
+        <adresa>
+            <strada> Strada Aerodromului </strada>
+            <nr> 9 </nr>
+            <oras> Sibiu </oras>
+        </adresa>
+    </studii>
+</persoana>
+
+<persoana id="6">
+    <nume> Tomescu </nume>
+    <prenume> Emilian </prenume>
+    <varsta> 45 </varsta>
+    <functie> Șef tehnic mentenanță </functie>
+    <telefon> 0744009988 </telefon>
+    <adresa>
+        <strada> Strada Motorului </strada>
+        <nr> 15 </nr>
+        <oras> Ploiești </oras>
+    </adresa>
+    <studii>
+        <institutie> Universitatea Tehnică de Aeronautică </institutie>
+        <adresa>
+            <strada> Strada Inginerului </strada>
+            <nr> 5 </nr>
+            <oras> Ploiești </oras>
+        </adresa>
+    </studii>
+</persoana>
+
+<persoana id="7">
+    <nume> Corbu </nume>
+    <prenume> Lavinia </prenume>
+    <varsta> 26 </varsta>
+    <functie> Însoțitor de bord </functie>
+    <telefon> 0766554433 </telefon>
+    <adresa>
+        <strada> Strada Trandafirilor </strada>
+        <nr> 7A </nr>
+        <oras> Iași </oras>
+    </adresa>
+    <studii>
+        <institutie> Școala de Stewardese LuxFlight </institutie>
+        <adresa>
+            <strada> Strada Frumoasă </strada>
+            <nr> 10 </nr>
+            <oras> Iași </oras>
+        </adresa>
+    </studii>
+</persoana>
+
+<persoana id="8">
+    <nume> Roman </nume>
+    <prenume> Ioana </prenume>
+    <varsta> 34 </varsta>
+    <functie> Supervizor operațional </functie>
+    <telefon> 0723442211 </telefon>
+    <adresa>
+        <strada> Strada Radarului </strada>
+        <nr> 19B </nr>
+        <oras> Bacău </oras>
+    </adresa>
+    <studii>
+        <institutie> Universitatea de Transporturi Aeriene </institutie>
+        <adresa>
+            <strada> Strada Transportului </strada>
+            <nr> 2 </nr>
+            <oras> Bacău </oras>
+        </adresa>
+    </studii>
+</persoana>
+
+<persoana id="9">
+    <nume> Popovici </nume>
+    <prenume> George </prenume>
+    <varsta> 40 </varsta>
+    <functie> Pilot instructor </functie>
+    <telefon> 0755123344 </telefon>
+    <adresa>
+        <strada> Strada Hangarului </strada>
+        <nr> 11 </nr>
+        <oras> Arad </oras>
+    </adresa>
+    <studii>
+        <institutie> Academia Militară de Aviație </institutie>
+        <adresa>
+            <strada> Calea Aurel Vlaicu </strada>
+            <nr> 98 </nr>
+            <oras> Arad </oras>
+        </adresa>
+    </studii>
+</persoana>
+
+
+</persoane>

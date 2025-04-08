@@ -141,3 +141,74 @@ function adaugaColoana() {
         tabela.rows[i].insertBefore(tdNou, tabela.rows[i].cells[coloana - 1]);
     }
 }
+
+function schimbaContinut(resursa, jsFisier, jsFunctie) {
+    schimbaImagNavbar(resursa);
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("continut").innerHTML = this.responseText;
+
+            if (jsFisier) {
+                var script = document.createElement('script');
+                script.onload = function () {
+                    if (jsFunctie) {
+                        window[jsFunctie]();
+                    }
+                };
+                script.src = jsFisier;
+                document.head.appendChild(script);
+            } else {
+                if (jsFunctie) {
+                    window[jsFunctie]();
+                }
+            }
+        }
+    };
+
+    xhttp.open("GET", resursa + ".html", true);
+    xhttp.send();
+}
+
+
+  function schimbaImagNavbar(resursa) {
+    var img = document.getElementById('navbar-image');
+    switch(resursa) {
+        case 'acasa':
+            img.src = 'imagini/guy_sidebar.png';
+            img.style.width = '240px';
+            break;
+        case 'despre':
+            img.src = 'imagini/girl1_sidebar.png';
+            img.style.width = '300px';
+            break;
+        case 'video':
+            img.src = 'imagini/girl4_sidebar.png';
+            img.style.width = '230px';
+            break;
+        case 'inregistreaza':
+            img.src = 'imagini/girl3_sidebar.png';
+            img.style.width = '230px';
+            break;
+        case 'desen':
+            img.src = 'imagini/guy2_sidebar.png';
+            img.style.width = '300px';
+            break;
+        case 'persoane':
+            img.src = 'imagini/girl5_sidebar.png';
+            img.style.width = '300px';
+            break;
+        case 'invat':
+            img.src = 'imagini/girl2_sidebar.png';
+            img.style.width = '300px';
+            break;
+        case 'cumparaturi':
+            img.src = 'imagini/girl2_sidebar.png';
+            img.style.width = '300px';
+            break;    
+        default:
+            img.src = 'imagini/guy_sidebar.png';
+            break;
+    }
+  }
