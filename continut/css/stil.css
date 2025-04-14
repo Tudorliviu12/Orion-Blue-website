@@ -28,8 +28,9 @@ body {
 
 .text-container {
   background: rgba(20, 123, 207, 0.5);
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .text-box{

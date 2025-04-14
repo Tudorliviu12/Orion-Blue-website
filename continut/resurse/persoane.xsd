@@ -9,7 +9,7 @@
                        <xs:element name="nume" type="xs:string"/>
                        <xs:element name="prenume" type="xs:string"/>
                        <xs:element name="varsta" type="xs:int"/>
-			<xs:element name="functie" type="xs:string"/>
+			            <xs:element name="functie" type="xs:string"/>
                        <xs:element name="telefon" type="xs:string"/>
                        <xs:element name="adresa">
                             <xs:complexType>

@@ -3,8 +3,8 @@
     <head>
         <link rel="stylesheet" href="css/stil.css">
         <title> Orion Blue: Cumparaturi </title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="imagini/logo.jpg">
+        <script src="js/script.js" defer></script>
+        
     </head>
     <body>
         <img src="imagini/logo.png" alt="Orion Blue" height="120px">
@@ -13,18 +13,58 @@
             <h2 id="title_cumpara"> Cumpără de aici bilete pentru destinația de vis!</h2>
         </header>
         <main>
-            <label for="continent">Alege continentul pe care dorești să îl vizitezi:</label>
-            <select id="continent">
-                <option value="" disabled selected hidden>Alege un continent</option>
-                <option value="europa">Europa</option>
-                <option value="america_nord">America de Nord</option>
-                <option value="america_sud">America de Sud</option>
-                <option value="africa">Africa</option>
-                <option value="asia">Asia</option>
-                <option value="oceania">Oceania</option>
+            <form>
+            <label for="oras"> Alege orașul dorit:</label>
+            <select id="oras">
+                <option value="" disabled selected hidden>Alege un oraș</option>
+                <option value="londra">Londra</option>
+                <option value="paris">Paris</option>
+                <option value="berlin">Berlin</option>
+                <option value="roma">Roma</option>
+                <option value="budapesta">Budapesta</option>
+                <option value="atena">Atena</option>
+                <option value="praga">Praga</option>
+                <option value="copenhaga">Copenhaga</option>
+                <option value="lisabona">Lisabona</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="madrid">Madrid</option>
+                <option value="milano">Milano</option>
+                <option value="viena">Viena</option>
+                <option value="amsterdam">Amsterdam</option>
+                <option value="oslo">Oslo</option>
+                <option value="cairo">Cairo</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="cape_town">Cape Town</option>
+                <option value="rabat">Rabat</option>
+                <option value="pretoria">Pretoria</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="beijing">Beijing</option>
+                <option value="dubai">Dubai</option>
+                <option value="singapore">Singapore</option>
+                <option value="new_york">New York</option>
+                <option value="chicago">Chicago</option>
+                <option value="san_francisco">San Francisco</option>
+                <option value="montreal">Montreal</option>
+                <option value="toronto">Toronto</option>
+                <option value="rio_de_janeiro">Rio de Janeiro</option>
+                <option value="lima">Lima</option>
+                <option value="buenos_aires">Buenos Aires</option>
+                <option value="sydney">Sydney</option>
+                <option value="melbourne">Melbourne</option>
             </select>
-                
+            <br>
+            <label> Alege numărul de bilete pe care vrei să îl achiziționezi:</label>
+            <input type="number" id="numar_bilete" min="1" max="10" value="1">
+        
+            <br>
+            <button id="cumpara" type="button" onclick="click_cumpara(event)">Cumpără biletul acum!</button>
+            <button id="sterge" type="button" onclick="stergeCos()">Șterge coșul</button>
+        </form>
+
+        <h3 id="cosul_tau"> Cosul tău:</h3>
         </main>
     </div>
+
     </body>
+    <script src="js/cumparaturi.js" defer></script>
 </html>

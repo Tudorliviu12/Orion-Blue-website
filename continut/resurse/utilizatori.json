@@ -1,0 +1,54 @@
+[
+    {
+        "utilizator": "test",
+        "parola": "test"
+    },
+    {
+        "utilizator": "Tudor",
+        "parola": "tudor",
+        "nume": "Rotariu",
+        "prenume": "Tudor",
+        "email": "tudorliviurotariu@yahoo.com",
+        "telefon": "0740511337",
+        "sex": "M",
+        "paginaPersonala": "https://www.geoguessr.com/game/uoO6hNZQ0LAXQJYD",
+        "aeroportPreferat": "SBZ",
+        "dataNasterii": "2002-03-12"
+    },
+    {
+        "utilizator": "Tudor",
+        "parola": "tudor",
+        "nume": "Rotariu",
+        "prenume": "Tudor",
+        "email": "tudorliviurotariu@yahoo.com",
+        "telefon": "0740511337",
+        "sex": "M",
+        "paginaPersonala": "https://www.geoguessr.com/game/uoO6hNZQ0LAXQJYD",
+        "aeroportPreferat": "SBZ",
+        "dataNasterii": "2002-03-12"
+    },
+    {
+        "utilizator": "tudor12",
+        "parola": "tudor",
+        "nume": "Rotariu",
+        "prenume": "Tudor",
+        "email": "tudorliviurotariu@yahoo.com",
+        "telefon": "0740511337",
+        "sex": "M",
+        "paginaPersonala": "https://www.geoguessr.com/game/uoO6hNZQ0LAXQJYD",
+        "aeroportPreferat": "Altul",
+        "dataNasterii": "2002-03-12"
+    },
+    {
+        "utilizator": "user",
+        "parola": "usernamr",
+        "nume": "userescu",
+        "prenume": "user",
+        "email": "user@user.com",
+        "telefon": "070000000",
+        "sex": "F",
+        "paginaPersonala": "",
+        "aeroportPreferat": "",
+        "dataNasterii": "2000-02-22"
+    }
+]

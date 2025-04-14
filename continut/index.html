@@ -6,11 +6,10 @@
         <link rel="icon" href="imagini/logo.jpg">
         <meta charset="UTF-8">
     </head>
-    <body class="body_home" onload="schimbaContinut('acasa')">
+    <body class="body_home" onload="schimbaContinut('acasa', null, null)">
         
     <header>
         <button class="menu-button" onclick="toggleMenu()">Meniu ☰</button>
-           
     </header>
 
         <nav class="sidebar">
@@ -22,7 +21,8 @@
             <li><a href="#" onclick="schimbaContinut('desen', null, null)">Desen</a></li>
             <li><a href="#" onclick="schimbaContinut('invat', 'js/script.js', 'init')">Învăț</a></li>
             <li><a href="#" onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a></li>
-            <li><a href="#" onclick="schimbaContinut('cumparaturi', null, null)">Cumpărături</a></li>
+            <li><a href="#" onclick="schimbaContinut('cumparaturi', 'js/cumparaturi.js', null)">Coș de cumpărături</a></li>
+            <li><a href="#" onclick="schimbaContinut('verifica', null, null)">Verifică-ți contul</a></li>
         </ul>
 
             <img id="navbar-image" src="imagini/guy_sidebar.png" class="sidebar_image" alt="imagine">

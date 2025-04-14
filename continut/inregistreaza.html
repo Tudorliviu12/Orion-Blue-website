@@ -16,29 +16,30 @@
             <h3> Reduceri și oferte speciale doar pentru membri! </h3>
         </header>
         <p> <img src="imagini/crew1.jpg" alt="Cabin crew" width="400" height="230"></p>
-        <form>
+        <form id="formular-inregistrare" onsubmit="initInregistrare(event)">
+
             <h3>Aventurile nu așteaptă! Devino membru Orion Blue și bucură-te de călătorii de neuitat!</h3>
             <h4>Asigură-ți locul la bord! Completează acum formularul și pregătește-te de decolare!</h4>
             
             <fieldset>
                 <legend> Informații generale</legend>
                 <label for="username">Nume de utilizator:</label>
-                <input type="text" id="username" name="username" required><br>
+                <input type="text" id="username" name="username"><br>
 
                 <label for="pass"> Parola:</label>
-                <input type="password" id="pass" name="pass" required><br>
+                <input type="password" id="pass" name="pass"><br>
 
                 <label for="firstname">Prenume:</label>
-                <input type="text" id="firstname" name="firstname" required><br>
+                <input type="text" id="firstname" name="firstname"><br>
 
                 <label for="lastname">Nume:</label>
-                <input type="text" id="lastname" name="lastname" required><br>
+                <input type="text" id="lastname" name="lastname"><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email"><br>
 
                 <label for="telefon">Număr de telefon:</label>
-                <input type="tel" id="telefon" name="telefon" required><br>
+                <input type="tel" id="telefon" name="telefon"><br>
             </fieldset>
             <fieldset>
                 <legend> Informații personale: </legend>
@@ -87,19 +88,19 @@
             <input type="color" id="color" name="color"> <br>
         
             <label for="buget">Cât de des călătorești cu avionul? </label>
-            <input type="range" id="buget" name="buget" min="0" max="10"><br>
+            <input type="range" id="buget1" name="buget" min="0" max="10"><br>
 
             <label for="buget">Cât de mult contează locul pe care îl ocupi în avion? </label>
-            <input type="range" id="buget" name="buget" min="0" max="10"><br>
+            <input type="range" id="buget2" name="buget" min="0" max="10"><br>
 
             <label for="buget">Cât de stresat te simți înainte de decolare? </label>
-            <input type="range" id="buget" name="buget" min="0" max="10"><br>
+            <input type="range" id="buget3" name="buget" min="0" max="10"><br>
 
             <label for="buget">Cât de multe cunoști referitor la ceea ce ai de făcut în cazul unui accident aerian? </label>
-            <input type="range" id="buget" name="buget" min="0" max="10"><br>
+            <input type="range" id="buget4" name="buget" min="0" max="10"><br>
 
             <label for="buget">Cât de des comanzi mâncare în timpul zborului? </label>
-            <input type="range" id="buget" name="buget" min="0" max="10"><br>
+            <input type="range" id="buget5" name="buget" min="0" max="10"><br>
 
             <label for="description">Suferi de anumite alergii? Descrie aici: </label>
             <textarea id="description" name="description" rows="6" cols="50"> </textarea>
@@ -114,7 +115,8 @@
             <p> Ești de acord cu termenii și condițiile impuse de către compania Orion Blue?</p>
             <input type="checkbox" name="terms" value="yes" > Sunt de acord cu termenii și condițiile impuse <br>
             <br>
-            <input type="submit" class="register-button" value="Înregistrează-te">
+            <button onclick="initInregistrare()" type="submit" class="register-button">Înregistrează-te</button>
+            <p id="raspuns_inregistrare"></p>
         </fieldset>
         </form>
     </div>

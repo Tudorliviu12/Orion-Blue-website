@@ -212,3 +212,117 @@ function schimbaContinut(resursa, jsFisier, jsFunctie) {
             break;
     }
   }
+
+  function click_verifica(){
+    const user = document.getElementById("user").value;
+    const pass = document.getElementById("pass").value;
+    if (!user || !pass) {
+        const rez = document.getElementById("rezultat_verificare");
+        rez.innerHTML = "❌ Nu ai introdus utilizator și/sau parolă!";
+        rez.style.color = "blue";
+        return;
+    }
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "resurse/utilizatori.json", true);
+    xhr.onload = function () {
+        if(xhr.status === 200) {
+            const textJson = xhr.responseText;
+            const utilizatori = JSON.parse(textJson);
+            const gasit = utilizatori.find(u => u.utilizator === user && u.parola === pass);
+            const rez = document.getElementById("rezultat_verificare");
+            if(gasit) {
+                rez.innerHTML = "✅ Utilizator și parolă corecte. Bine ai venit, " + gasit.utilizator + "!";
+                rez.style.color = "green";
+            }
+            else{
+                rez.innerHTML = "❌ Utilizator sau parolă incorecte!";
+                rez.style.color = "red";
+            }
+        }
+        else if(xhr.status === 404){
+            const rez = document.getElementById("rezultat_verificare");
+            rez.innerHTML = "❌ Nu s-a găsit fișierul cu utilizatorii!";
+            rez.style.color = "blue";
+        }
+        else{
+            const rez = document.getElementById("rezultat_verificare");
+            rez.innerHTML = "❌ Eroare la preluarea datelor!";
+            rez.style.color = "blue";
+        }
+       
+    }
+    xhr.send();
+  }
+/*
+  function initInregistrare(){
+    const user = document.getElementById("user");
+    const pass = document.getElementById("pass");
+    const dateUser = {
+        utilizator: user.value,
+        parola: pass.value
+    };
+
+    fetch("/api/utilizatori", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dateUser)
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => console.error(error));
+
+    }
+*/
+
+    
+    function initInregistrare(event) {
+        event.preventDefault();
+    
+        let numeUtilizator = document.getElementById('username').value;
+        let parola = document.getElementById('pass').value;
+        let prenume = document.getElementById('firstname').value;
+        let nume = document.getElementById('lastname').value;
+        let email = document.getElementById('email').value;
+        let telefon = document.getElementById('telefon').value;
+        let sex = document.getElementById('gen').value;
+        let paginaPersonala = document.getElementById('website').value;
+        let aeroport = document.getElementById('airport').value;
+        let dataNasterii = document.getElementById('birthday').value;
+    
+        if (!numeUtilizator || !parola || !prenume || !nume || !email || !telefon || !sex || !dataNasterii) {
+            alert("Completează toate câmpurile obligatorii, că altfel nu zburăm nicăieri 🚫✈️");
+            return;
+        }
+    
+        let utilizator = {
+            utilizator: numeUtilizator,
+            parola: parola,
+            nume: nume,
+            prenume: prenume,
+            email: email,
+            telefon: telefon,
+            sex: sex,
+            paginaPersonala: paginaPersonala,
+            aeroportPreferat: aeroport,
+            dataNasterii: dataNasterii
+        };
+    
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    alert("🚀 Înregistrare completă! Bine ai venit la bord, " + prenume + "!");
+                } else {
+                    alert("💥 Eroare la decolare: " + this.status);
+                }
+            }
+        };
+        xhttp.open("POST", "/api/utilizatori", true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.send(JSON.stringify(utilizator));
+    }
+    
