@@ -25,8 +25,8 @@
         <nume> Zotic </nume>
         <prenume> Andreea </prenume>
         <varsta> 20 </varsta>
+	    <functie> Pilot stagiar </functie>
         <telefon> 0771422982 </telefon>
-	<functie> Pilot stagiar </functie>
         <adresa>
             <strada> Strada Calea Plevnei </strada>
             <nr> 19 </nr>
@@ -42,22 +42,22 @@
         </studii>
     </persoana>
     <persoana id="3">
-        <nume> Tăbușcă </nume>
-        <prenume> Codrina </prenume>
+        <nume> Lupu </nume>
+        <prenume> George </prenume>
         <varsta> 22 </varsta>
 	<functie> Inginer software intern </functie>
         <telefon> 0740901388 </telefon>
         <adresa>
             <strada> Strada Lalelelor </strada>
             <nr> 2 </nr>
-            <oras> Bacău </oras>
+            <oras> Brăila </oras>
         </adresa>
         <studii>
             <institutie> Facultatea de Automatică și Calculatoare </institutie>
             <adresa>
                 <strada> Strada Mihai Eminescu </strada>
                 <nr> 3 </nr>
-                <oras> Bacau </oras>
+                <oras> Brăila </oras>
             </adresa>
         </studii>
     </persoana>
@@ -132,7 +132,7 @@
     <telefon> 0766554433 </telefon>
     <adresa>
         <strada> Strada Trandafirilor </strada>
-        <nr> 7A </nr>
+        <nr> 7 </nr>
         <oras> Iași </oras>
     </adresa>
     <studii>
@@ -153,7 +153,7 @@
     <telefon> 0723442211 </telefon>
     <adresa>
         <strada> Strada Radarului </strada>
-        <nr> 19B </nr>
+        <nr> 19 </nr>
         <oras> Bacău </oras>
     </adresa>
     <studii>
@@ -186,6 +186,25 @@
         </adresa>
     </studii>
 </persoana>
-
+<persoana id="10">
+    <nume> Dumea </nume>
+    <prenume> Vlad </prenume>
+    <varsta> 21 </varsta>
+    <functie> Inginer Software </functie>
+    <telefon> 0750190240 </telefon>
+    <adresa>
+        <strada> Aleea Proiectantului </strada>
+        <nr> 5 </nr>
+        <oras> Bacău </oras>
+    </adresa>
+    <studii>
+        <institutie> Facultatea de Automatică și Calculatoare </institutie>
+        <adresa>
+            <strada> Bulevardul Profesor Dimitrie Mangeron </strada>
+            <nr> 27 </nr>
+            <oras> Iași </oras>
+        </adresa>
+    </studii>
+</persoana>
 
 </persoane>

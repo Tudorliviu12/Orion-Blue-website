@@ -60,7 +60,6 @@ let worker = new Worker('js/worker.js');
 worker.addEventListener('message', function(e) {
     console.log("Worker a primit mesajul:", e.data);
     alert("✅ S-au procurat bilete spre " + e.data + " cu succes!");
-    let lista = document.getElementById("cosul_tau");
     let item = document.createElement("li");
     item.textContent = e.data;
 });

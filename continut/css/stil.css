@@ -556,22 +556,18 @@ input[type="range"]::-webkit-slider-thumb{
 
 
 
-@media screen and (max-width: 480px) {
-  body{
-    background: linear-gradient(to bottom left, #327f9b, #97b4be);
-  }
+@media screen and (max-width: 500px) {
   .video-gallery iframe {
     flex: 1 1 100%;
     height: 250px;
  }
- }
 
- @media (max-width: 800px){
-  .meniu_invat{
-    right: 25px;
-  }
-  #sectiunea1 p{
-    margin-top: 10px;
-  }
+ .meniu_invat{
+  right: 25px;
+}
+#sectiunea1 p{
+  margin-top: 10px;
+}
+
 
  }
